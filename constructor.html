@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Конструктор кольца — Тыва мастерская</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script>document.documentElement.className='js'</script></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="gM" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".2" stop-color="#cfd5de"/><stop offset=".4" stop-color="#8b93a1"/><stop offset=".6" stop-color="#eef1f5"/><stop offset=".8" stop-color="#9aa2b0"/><stop offset="1" stop-color="#f6f8fa"/></linearGradient>
+<linearGradient id="gG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3c4"/><stop offset=".2" stop-color="#e8c260"/><stop offset=".4" stop-color="#9c6f17"/><stop offset=".6" stop-color="#f6dc90"/><stop offset=".8" stop-color="#b3862b"/><stop offset="1" stop-color="#ffe9a8"/></linearGradient>
+<linearGradient id="gR" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe3d6"/><stop offset=".2" stop-color="#e8a78d"/><stop offset=".4" stop-color="#9a5640"/><stop offset=".6" stop-color="#f8cdbb"/><stop offset=".8" stop-color="#b06a52"/><stop offset="1" stop-color="#ffe6da"/></linearGradient>
+<linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9aa0ad"/><stop offset=".2" stop-color="#555b69"/><stop offset=".4" stop-color="#1c1f28"/><stop offset=".6" stop-color="#7b8190"/><stop offset=".8" stop-color="#2a2e38"/><stop offset="1" stop-color="#8a909d"/></linearGradient>
+<filter id="bl"><feGaussianBlur stdDeviation="5"/></filter></defs></svg>
+<header><a class="logo" href="index.html">Тыва <b>мастерская</b></a><nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="constructor.html" class="act">Конструктор</a><a href="about.html">Как мы работаем</a><a href="faq.html">Вопросы</a><a href="order.html">Заказ<span id="cc"></span></a></nav></header>
+<main><div class="ornament"></div><section id="design" class="dark"><h2>Конструктор кольца</h2><p class="sub">Выберите металл, камень, оправу и узор — кольцо перерисуется сразу, а справа внизу появится расчёт веса и цены. Готовый макет отправьте в заказ.</p>
+<div class="ctor"><div class="stage"><svg id="ring" viewBox="0 0 400 400" role="img" aria-label="Макет кольца"></svg><table class="bd" id="bd"></table><div class="tot"><span>Ориентировочно</span><b id="rp"></b></div></div>
+<div>
+<fieldset><legend>Металл</legend><div class="opts" id="o-metal"></div></fieldset>
+<fieldset><legend>Поверхность</legend><div class="opts" id="o-fin"></div></fieldset>
+<fieldset><legend>Центральный камень</legend><div class="opts" id="o-stone"></div></fieldset>
+<fieldset><legend>Форма камня</legend><div class="opts" id="o-shape"></div></fieldset>
+<fieldset><legend>Размер камня</legend><div class="opts" id="o-ssz"></div></fieldset>
+<fieldset><legend>Оправа</legend><div class="opts" id="o-set"></div></fieldset>
+<fieldset><legend>Боковые камни</legend><div class="opts" id="o-side"></div></fieldset>
+<fieldset><legend>Узор на шинке</legend><div class="opts" id="o-pat"></div></fieldset>
+<fieldset><legend>Профиль шинки</legend><div class="opts" id="o-prof"></div></fieldset>
+<fieldset><legend>Ширина шинки: <span id="wv"></span> мм</legend><input type="range" id="width" min="2" max="10" step=".5" value="4" aria-label="Ширина"></fieldset>
+<fieldset><legend>Размер кольца (внутренний диаметр): <span id="sv"></span> мм</legend><input type="range" id="size" min="15" max="23" step=".5" value="17.5" aria-label="Размер"><div class="hint">Женские кольца чаще 16–18 мм, мужские — 19–21 мм. Не уверены — укажите в заказе, подскажем, как измерить.</div></fieldset>
+<fieldset><legend>Гравировка внутри (до 16 знаков)</legend><input class="field" type="text" id="engr" maxlength="16" placeholder="Имя, дата или слово"></fieldset>
+<button class="btn" id="addRing">Добавить макет в заказ</button></div></div></section></main>
+<footer><div><b>Тыва мастерская</b><br>г. Кызыл · работаем по заказам</div><div>Телефон: укажите здесь<br>Telegram / WhatsApp: укажите здесь</div></footer>
+<script src="app.js"></script></body></html>
